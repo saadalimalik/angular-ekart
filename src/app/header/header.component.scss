@@ -1,46 +1,18 @@
 .header {
-  padding: 0.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #000;
-  border-bottom: 1px solid rgba(0 0 0 / 0.1);
-  &__brand {
-    font-family: "Concert One", sans-serif;
-    font-size: 4rem;
-    font-weight: bold;
-  }
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    border-bottom: 1px solid rgba(0 0 0 / 0.1);
+    &__brand {
+        font-family: "Concert One", sans-serif;
+        font-size: 4rem;
+        font-weight: bold;
+    }
 }
 .navbar {
-  display: flex;
-  &__search {
     display: flex;
-  }
-  &__search-label {
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(
-      rgba(0 0 0 / 0.05),
-      rgba(0 0 0 / 0.1),
-      rgba(0 0 0 / 0.05)
-    );
-    padding-inline: 1rem;
-    cursor: pointer;
-  }
-  &__search-input {
-    padding: 0.5rem 1rem;
-    outline: none;
-    border-left: none;
-    border-color: rgba(0 0 0 / 0.05);
-  }
-  &__links {
-    display: flex;
-    align-items: center;
-  }
-  &__link-item {
-    a {
-      display: inline-block;
-      padding: 0.75rem 2rem;
-    }
-  }
+    flex-direction: column;
+    align-items: flex-end;
 }

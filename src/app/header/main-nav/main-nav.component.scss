@@ -1,0 +1,38 @@
+.navbar {
+    &__main {
+        display: flex;
+    }
+    &__search {
+        display: flex;
+    }
+    &__search-label {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(
+            rgba(0 0 0 / 0.05),
+            rgba(0 0 0 / 0.1),
+            rgba(0 0 0 / 0.05)
+        );
+        padding-inline: 1rem;
+        cursor: pointer;
+    }
+    &__search-input {
+        padding: 0.5rem 1rem;
+        outline: none;
+        border-left: none;
+        border-color: rgba(0 0 0 / 0.05);
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+    &__link-item {
+        a {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            &:hover {
+                background-color: rgba(0 0 0 / 0.05);
+            }
+        }
+    }
+}

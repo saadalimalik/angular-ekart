@@ -1,8 +1,17 @@
 .top-header {
     background-color: #000;
+    position: relative;
     &__text {
         color: white;
         text-align: center;
         padding-block: 0.25rem;
+    }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        translate: 0 -50%;
+        color: #fff;
+        cursor: pointer;
     }
 }
