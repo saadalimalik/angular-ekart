@@ -1,0 +1,22 @@
+<div class="product">
+    <div class="product__image">
+        <img
+            [src]="product.image"
+            [attr.aria-label]="product.title"
+            [alt]="product.title"
+        />
+    </div>
+    <div class="product__info">
+        <h2 class="product__title">{{ product.title }}</h2>
+        <strong class="product__price">{{ product.price | currency }}</strong>
+        <p>
+            @if (product.inStock > 0) { In Stock:
+            <span class="product__availability--in">{{ product.inStock }}</span>
+            } @else {
+            <span class="product__availability--out">Out of Stock</span> }
+        </p>
+        <div class="product__buy">
+            <button class="btn btn--primary">Add to cart</button>
+        </div>
+    </div>
+</div>
