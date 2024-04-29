@@ -14,4 +14,9 @@ export class ProductComponent {
         rating: 4.2,
         inStock: 4,
     };
+    productQuantity: number = 0;
+
+    changeOrder(quantity: number) {
+        if (quantity >= 0) this.productQuantity = quantity;
+    }
 }

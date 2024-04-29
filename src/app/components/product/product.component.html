@@ -6,16 +6,39 @@
             [alt]="product.title"
         />
     </div>
-    <div class="product__info">
-        <h2 class="product__title">{{ product.title }}</h2>
-        <strong class="product__price">{{ product.price | currency }}</strong>
-        <p>
-            @if (product.inStock > 0) { In Stock:
-            <span class="product__availability--in">{{ product.inStock }}</span>
-            } @else {
-            <span class="product__availability--out">Out of Stock</span> }
-        </p>
+    <div class="product__details">
+        <div class="product__info">
+            <h2 class="product__title">{{ product.title }}</h2>
+            <strong class="product__price">{{
+                product.price | currency
+            }}</strong>
+            <p>
+                @if (product.inStock > 0) { In Stock:
+                <span class="product__availability--in">{{
+                    product.inStock
+                }}</span>
+                } @else {
+                <span class="product__availability--out">Out of Stock</span> }
+            </p>
+        </div>
         <div class="product__buy">
+            <div class="product__quantity">
+                <button
+                    class="product__decrement-btn btn"
+                    (click)="changeOrder(productQuantity - 1)"
+                    [disabled]="productQuantity <= 0"
+                >
+                    -
+                </button>
+                <span>{{ productQuantity }}</span>
+                <button
+                    class="product__increment-btn btn"
+                    (click)="changeOrder(productQuantity + 1)"
+                    [disabled]="productQuantity >= product.inStock"
+                >
+                    +
+                </button>
+            </div>
             <button class="btn btn--primary">Add to cart</button>
         </div>
     </div>
