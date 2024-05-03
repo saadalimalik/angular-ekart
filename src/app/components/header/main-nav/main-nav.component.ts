@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
     templateUrl: './main-nav.component.html',
     styleUrl: './main-nav.component.scss',
 })
-export class MainNavComponent {}
+export class MainNavComponent {
+    searchValue: string = '';
+}

@@ -13,6 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MainNavComponent } from './components/header/main-nav/main-nav.component';
 import { ProductComponent } from './components/product/product.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,13 @@ import { CommonModule } from '@angular/common';
         MainNavComponent,
         ProductComponent,
     ],
-    imports: [BrowserModule, AppRoutingModule, CommonModule, FontAwesomeModule],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        CommonModule,
+        FormsModule,
+        FontAwesomeModule,
+    ],
     providers: [provideClientHydration()],
     bootstrap: [AppComponent],
 })

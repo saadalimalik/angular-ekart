@@ -17,6 +17,8 @@ export class ProductComponent {
     productQuantity: number = 0;
 
     changeOrder(quantity: number) {
-        if (quantity >= 0) this.productQuantity = quantity;
+        if (quantity >= 0 && quantity <= this.product.inStock) {
+            this.productQuantity = quantity;
+        }
     }
 }
