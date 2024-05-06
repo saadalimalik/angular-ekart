@@ -1,6 +1,7 @@
 .product {
     display: flex;
     &__image {
+        min-width: 300px;
         max-width: 350px;
         padding: 2rem;
         border: 1px solid rgba(0 0 0 / 0.1);

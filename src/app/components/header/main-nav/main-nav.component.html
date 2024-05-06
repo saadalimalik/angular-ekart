@@ -12,17 +12,8 @@
     </label>
 
     <ul class="navbar__links">
-        <li class="navbar__link-item">
-            <a href="/">Home</a>
-        </li>
-        <li class="navbar__link-item">
-            <a href="/products">Products</a>
-        </li>
-        <li class="navbar__link-item">
-            <a href="/contact">Contact Us</a>
-        </li>
-        <li class="navbar__link-item">
-            <a href="/about">About Us</a>
+        <li class="navbar__link-item" *ngFor="let item of navItems">
+            <a [href]="item.link">{{ item.text }}</a>
         </li>
     </ul>
 </div>

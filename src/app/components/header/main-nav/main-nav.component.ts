@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NavItem } from '../../../../interfaces/general.interfaces';
 
 @Component({
     selector: 'main-nav',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class MainNavComponent {
     searchValue: string = '';
+    @Input() navItems: NavItem[] = [];
 }
