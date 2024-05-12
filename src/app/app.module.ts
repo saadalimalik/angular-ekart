@@ -11,7 +11,7 @@ import { TopHeaderComponent } from './components/header/top-header/top-header.co
 import { TopNavComponent } from './components/header/top-nav/top-nav.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MainNavComponent } from './components/header/main-nav/main-nav.component';
-import { ProductComponent } from './components/product/product.component';
+import { ProductViewComponent } from './components/product-view/product-view.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -22,7 +22,7 @@ import { FormsModule } from '@angular/forms';
         TopHeaderComponent,
         TopNavComponent,
         MainNavComponent,
-        ProductComponent,
+        ProductViewComponent,
     ],
     imports: [
         BrowserModule,
