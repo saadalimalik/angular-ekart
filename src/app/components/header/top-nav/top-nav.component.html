@@ -1,8 +1,15 @@
-<ul class="navbar__top">
-    <li class="navbar__top-link">
-        <a href="/help">Help</a>
-    </li>
-    <li class="navbar__top-link">
-        <a href="/login">Login / Sign Up</a>
-    </li>
-</ul>
+<div class="wrapper">
+    <ul class="navbar__top">
+        <li class="navbar__top-link">
+            <a href="/help">Help</a>
+        </li>
+        <li class="navbar__top-link">
+            <a href="/login">Login / Sign Up</a>
+        </li>
+    </ul>
+    
+    <div class="cart">
+        <fa-icon [icon]="faBagShopping" class="cart__icon"></fa-icon>
+        <div class="cart__badge">0</div>
+    </div>
+</div>

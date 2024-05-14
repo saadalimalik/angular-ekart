@@ -18,6 +18,12 @@ a {
     color: inherit;
 }
 
+// Themes 
+:root {
+    --primary-color: rgba(0 0 0 / 80%);
+    --secondary-color: rgba(255 255 255);
+}
+
 // Configurations
 html {
     font-family: "Montserrat", sans-serif;
